@@ -1,0 +1,88 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background: linear-gradient(to right, #e2e2e2, #3553A8);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+    }
+
+    nav {
+      background: linear-gradient(to right, #e2e2e2, #3553A8);
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 30px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #3553A8;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .hero {
+      background: url('background.png') no-repeat center center/cover;
+      height: 300px;
+	  width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      background: #f5f5f5;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      color: #2575fc;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }

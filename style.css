@@ -1,0 +1,206 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body::before {
+    content: "π Δ ∑ ∞ √ α β γ δ θ λ μ σ Φ ψ Ω E = mc² F = ma";
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.05); /* Light opacity for subtle effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 1.2;
+    z-index: -1; /* Place behind content */
+}
+
+body {
+    position: relative;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevents scrollbars due to positioning */
+}
+
+.container {
+    background-color: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.2);
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+label {
+    position: absolute;
+    left: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #757575;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -1rem;
+    font-size: 13px;
+    color: hsl(327, 90%, 28%);
+}
+
+.recover {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.recover a {
+    text-decoration: none;
+    color: rgb(125, 125, 235);
+    transition: color 0.3s;
+}
+
+.recover a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: rgb(125, 125, 235);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #07001f;
+}
+
+.or {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.icons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.icons i {
+    color: rgb(125, 125, 235);
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #dfe9f5;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.icons i:hover {
+    background-color: #07001f;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.links button {
+    color: rgb(125, 125, 235);
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.links button:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.loader {
+    border: 4px solid transparent;
+    border-top: 4px solid white; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
